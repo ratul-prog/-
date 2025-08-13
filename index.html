@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratul | Official Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="logo">Ratul</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>My Official Projects</h1>
+        <p>Explore my collection of professional web projects. Each one showcases unique solutions and creative implementations.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>For my complete portfolio including data projects and detailed case studies, visit:</p>
+        <a href="https://ratulportfolio.com" class="portfolio-link">RatulPortfolio.com</a>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    
+    <script src="js/config.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

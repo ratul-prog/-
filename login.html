@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ratul Portfolio Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Admin Login</h1>
+        <div id="message" class="message"></div>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="ইমেইল" required>
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+            <button type="submit">লগইন</button>
+        </form>
+        <p>একাউন্ট নেই? <a href="#" id="register-link">রেজিস্টার করুন</a></p>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            checkAuth();
+            
+            document.getElementById('login-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                login(email, password);
+            });
+            
+            document.getElementById('register-link').addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = prompt('ইমেইল দিন:');
+                if (email) {
+                    const password = prompt('পাসওয়ার্ড দিন (৬ ডিজিটের বেশি):');
+                    if (password && password.length >= 6) {
+                        firebase.auth().createUserWithEmailAndPassword(email, password)
+                            .then(() => {
+                                sendVerificationEmail();
+                                alert('রেজিস্ট্রেশন সফল! ভেরিফিকেশন ইমেইল চেক করুন।');
+                            })
+                            .catch(error => {
+                                alert('Error: ' + error.message);
+                            });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
