@@ -202,3 +202,24 @@
                 left: 0;
             }
         }
+.main_website {
+    text-align: center;
+    margin-top: 3rem;
+}
+.main_website button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--accent);
+    color: var(--text-white);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.main_website button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+}
