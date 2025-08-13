@@ -1,14 +1,26 @@
 [
   {
-    "title": "E-Commerce Website",
-    "description": "A complete online shopping solution",
-    "image": "images/project1.jpg",
-    "url": "https://example.com/ecommerce"
+    "title": "Weather",
+    "description": "Through this you can know about the weather in your area.",
+    "image": "project.jpg",
+    "url": "https://shahriarislamratul.github.io/weather-/"
   },
   {
-    "title": "Portfolio Template",
-    "description": "Modern responsive portfolio design",
-    "image": "images/project2.jpg",
-    "url": "https://example.com/portfolio"
+    "title": "Tic Tac Toe",
+    "description": "Feeling bored? Then play this game with your friend now.",
+    "image": "project2.jpg",
+    "url": "https://shahriarislamratul.github.io/Tic-Tac-Toe/"
+  }
+  {
+    "title": "Password Genaret",
+    "description": "This will allow you to generate very strong passwords.You can customize it to your liking.",
+    "image": "project4.jpg",
+    "url": "https://shahriarislamratul.github.io/ai_password_generator/"
+  }
+  {
+    "title": "Drawing Board",
+    "description": "Here you can bring anything you like.",
+    "image": "project3.jpg",
+    "url": "https://shahriarislamratul.github.io/drawing/"
   }
 ]
