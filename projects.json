@@ -1,0 +1,14 @@
+[
+  {
+    "title": "E-Commerce Website",
+    "description": "A complete online shopping solution",
+    "image": "images/project1.jpg",
+    "url": "https://example.com/ecommerce"
+  },
+  {
+    "title": "Portfolio Template",
+    "description": "Modern responsive portfolio design",
+    "image": "images/project2.jpg",
+    "url": "https://example.com/portfolio"
+  }
+]
